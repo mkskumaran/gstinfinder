@@ -141,7 +141,7 @@ class PersistentDrawer extends React.Component {
         }}
       >
 		<Divider />		
-			<ListItem component={Link} to="/gitusers/gst" onClick={this.handleDrawerClose}> 
+			<ListItem component={Link} to="/gst" onClick={this.handleDrawerClose}> 
 				<ListItemIcon>
 				<Svg />
 				</ListItemIcon>

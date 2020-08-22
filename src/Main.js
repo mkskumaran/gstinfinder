@@ -9,7 +9,7 @@ const Main = () => (
 <Drawer>
     <Switch>
       <Route exact path='/app' component={App}/>
-	  <Route path='/gst' component={Gst}/>
+	  <Route path='/gstinfinder/gst' component={Gst}/>
 	  <Route path='/drawer' component={Drawer}/>
 	  <Route path='/Gst_new' component={Gst_new}/>
     </Switch>

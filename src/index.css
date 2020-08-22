@@ -4,6 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-.MuiAppBar-positionFixed-2{
+.mui-fixed{
 	position:unset!important;
 }

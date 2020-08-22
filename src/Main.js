@@ -1,10 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-//import Test from './Test'
 import App from './App'
-
 import Gst from './Gst'
-
 import Drawer from './Drawer'
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster

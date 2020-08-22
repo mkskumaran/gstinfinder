@@ -15,6 +15,7 @@ const styles = theme => ({
 	card:{
 		width:'90%',
 		margin:'0 5% auto',
+		paddingTop:'1em',
 	},
 	error:{
 		color:'rgb(206, 17, 38)',

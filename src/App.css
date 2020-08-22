@@ -1,5 +1,5 @@
-body{
-	font-family:monospace!important;
+body,.MuiFormHelperText-root-132,label{
+	font-family:cursive!important;
 }
 h2{
 	font-size: xx-small;
@@ -26,6 +26,15 @@ h2{
 
 .App-intro {
   font-size: xx-small;
+}
+
+.App-link{
+	color:#fff;
+}
+
+.top_rate_view{
+	padding-top:1em;
+	padding-bottom:1em;
 }
 
 @keyframes App-logo-spin {

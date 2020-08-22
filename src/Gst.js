@@ -30,7 +30,7 @@ const styles = theme => ({
 	},
 	rates:{
 		color: '#fff',
-		width: '100%',
+		width: '90%',
 		float: 'left',
 		borderRadius: '5px',
 		padding: '2.5em 0em',
@@ -44,6 +44,10 @@ const styles = theme => ({
 		  margin:'2.5% 0% 2.5% 0%',
 		}		
 	},
+	ratescom:{
+		width: "90%",
+		margin: "0 5% auto",	
+	}
 });
 
 
@@ -127,7 +131,7 @@ class Gst  extends Component {
 				</TextField>				
 				</div>  	
 			</div>	
-		<div>
+		<div className="top_rate_view">
 		{
 		this.state.loading 
 		? 

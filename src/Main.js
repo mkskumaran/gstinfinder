@@ -7,9 +7,9 @@ import Drawer from './Drawer'
 const Main = () => (  
 <Drawer>
     <Switch>
-      <Route exact path='/gitusers/app' component={App}/>
-	  <Route path='/gitusers/gst' component={Gst}/>
-	  <Route path='/gitusers/drawer' component={Drawer}/>
+      <Route exact path='/app' component={App}/>
+	  <Route path='/gst' component={Gst}/>
+	  <Route path='/drawer' component={Drawer}/>
     </Switch>
  </Drawer> 
 )

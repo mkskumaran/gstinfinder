@@ -12,101 +12,14 @@ const styles = theme => ({
 		lineHeight:'2em',
 		textAlign:'justify',
 	},
-	helperText : {
-		fontSize: '57%!important',
-		lineHeight:'2em!important',		
-	},
 	card:{
-		width:'75%',
-		margin:'0 auto',
-		padding:'2em',
-	},
-	Button:{
-		padding: 8
+		width:'90%',
+		margin:'0 5% auto',
 	},
 	error:{
 		color:'rgb(206, 17, 38)',
 		margin: '0!important',
 		textAlign:'center',
-	},
-
-	root: {
-		flexGrow: 1,
-		maxWidth: 500,
-	  },
-	menuButton: {
-		marginLeft: -18,
-		marginRight: 10,
-	},	 
-	row: {
-		//float:'left',
-		margin:'0 auto',
-		width:'84%',
-		display: 'flex',
-		justifyContent: 'center',
-	  },
-	bigAvatar: {
-		width: 60,
-		height: 60,
-		background:'rgb(201, 206, 234)',
-		borderRadius:'50%!important',
-		border:'4px solid rgb(201, 206, 234)',
-	},
-	bigAvatarbefore: {
-		width: 60,
-		height: 60,
-		borderRadius:'100%',
-		background:'rgb(201, 206, 234)',
-	},
-	iconAvatarbefore: {
-		width: 40,
-		height: 40,
-		background:'rgb(201, 206, 234)',
-	},	
-	chip: {
-    margin: theme.spacing.unit,
-	background:'none',
-	color:'rgba(0, 0, 0, 0.54)',
-	},
-	chipbefore:{
-		width:'30%',
-		height:'.4em',
-		marginTop: '20px',
-		marginLeft: '20px',		
-	},
-	chipbefore2:{
-		width:'100%',
-		height:'.4em',
-		marginLeft: '20px',			
-	},
-	card2: {
-		display: 'inline-flex',
-	},	
-	cover: {
-		width: 151,
-		height: 151,
-		padding: '4px',
-		margin: '4px',	
-	},	
-	headline: {
-		fontSize:'1em',
-	},
-	MyFacebookLoader: {
-		width:'25em',
-		margin:'0 auto',
-	},
-	avatar: {
-		margin: 10,
-	},
-	avatarbefore:{
-	    width: "40px",
-		height: "35px",	
-		borderRadius:"100%",
-	},
-	biobefore:{
-		width: '100px',
-		height: '5px',
-		marginLeft: '5px',
 	},
 	paper:{
 		padding:'1em',
@@ -115,12 +28,9 @@ const styles = theme => ({
 		fontFamily:'monospace!important',		
 		textAlign:'justify',
 	},
-	avataricon:{
-		background: 'rgb(201, 206, 234)',
-	},
 	rates:{
 		color: '#fff',
-		width: '15%!important',
+		width: '100%',
 		float: 'left',
 		borderRadius: '5px',
 		padding: '2.5em 0em',
@@ -130,17 +40,10 @@ const styles = theme => ({
 		backgroundColor: '#3f51b5',
 		boxShadow: '0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)',	
 		'@media screen and (max-width: 720px)': {
-		  width:'50%!important',
-		  padding:'2.5em 2em'
+		  width:'90%!important',
+		  margin:'2.5% 0% 2.5% 0%',
 		}		
 	},
-	
-	ratescom:{
-		padding: '0em 2.5em',
-		fontStyle:'italic',
-		fontWeight: 'bolder',
-	}
-
 });
 
 
@@ -167,17 +70,13 @@ class Gst  extends Component {
 
 	onChangePercent = percent => e => {
 		if(this.state.rupees === ''){
-			//alert('Rupees Cannot Be Empty..!');
 			console.log('Rupees Cannot Be Empty..!');
 			this.setState({error:'Required *'});
 			return false;
 		}
 		this.setState({percent: e.target.value,status: false, loading: true,paper:true});
 	}
-
-	handleGameClik() {
-		this.setState( {disabled: !this.state.disabled} )
-	} 	
+	
 	render() {
     const { classes } = this.props;
 	const rupees = Number(this.state.rupees);

@@ -1,0 +1,42 @@
+{
+  "name": "my-react",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://mkskumaran.github.io/gitusers/",
+  "dependencies": {
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^2.0.3",
+    "axios": "^0.18.1",
+    "i18next": "^12.1.0",
+    "i18next-browser-languagedetector": "^2.2.4",
+    "i18next-xhr-backend": "^1.5.1",
+    "material-ui": "^0.20.2",
+    "mocka-placeholder": "^1.0.2",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-content-loader": "^3.4.2",
+    "react-dom": "^16.13.0",
+    "react-i18next": "^8.4.0",
+    "react-inspector": "^2.3.1",
+    "react-material-ui-form-validator": "^2.0.10",
+    "react-native": "^0.61.5",
+    "react-native-shimmer-placeholder": "^1.0.35",
+    "react-placeholder": "^3.0.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-shimmer": "^0.1.3",
+    "rn-placeholder": "^1.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}

@@ -7,7 +7,7 @@ import Drawer from './Drawer'
 const Main = () => (  
 <Drawer>
     <Switch>
-      <Route exact path='/gstinfinder' component={Gst}/>
+      <Route exact path='/' component={Gst}/>
 	  <Route exact path='/gstinfinder/gst_new' component={Gst_new}/>
     </Switch>
  </Drawer> 

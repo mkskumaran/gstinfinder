@@ -149,10 +149,10 @@ class Gst  extends Component {
 			<div> {'Tax'}</div> { <div> {gstAmount} </div> }
           </Grid>
           <Grid item  className={classes.rates}>
-			<div> {'CGST'}</div> { <div> {gstAmount/2} </div> }
+			<div> {'CGST'}</div> { <div> {gstAmount} </div> }
           </Grid>	
           <Grid item  className={classes.rates}>
-			<div> {'SGST'}</div> { <div> {gstAmount/2} </div> }
+			<div> {'SGST'}</div> { <div> {gstAmount} </div> }
           </Grid>
 		<Grid>
 			{ <div className={classes.ratescom}> Note : {gstAmount/2} Rupess Will Go To Center (CGST) & {gstAmount/2} Rupess Will Go To State (SGST)</div> }

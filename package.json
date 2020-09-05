@@ -2,7 +2,7 @@
   "name": "my-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://mkskumaran.github.io/gstinfinder",
+  "homepage": "https://mkskumaran.github.io/gstinfinder/",
   "dependencies": {
     "@material-ui/core": "^1.5.1",
     "@material-ui/icons": "^2.0.3",

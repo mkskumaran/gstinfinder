@@ -8,7 +8,7 @@ const Main = () => (
 <Drawer>
 <BrowserRouter basename="/">
     <Switch>
-	  <Route exact path="/" component={Gst} render={()=>{return(<Redirect to="/gstinfinder" />)}}/>
+	  <Route exact path="/" component={Gst} render={()=>{return(<Redirect to="/gstinfinder" />)}}/>	
 	  <Route path='/gstinfinder/gst_new' component={Gst_new}/>
     </Switch>
 </BrowserRouter>	

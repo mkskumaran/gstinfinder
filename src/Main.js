@@ -6,7 +6,7 @@ import Drawer from './Drawer'
 
 const Main = () => (  
 <Drawer>
-<BrowserRouter basename="/">
+<BrowserRouter>
     <Switch>
       <Route exact path='/gstinfinder' component={Gst}/>
 	  <Route path='/gstinfinder/gst_new' component={Gst_new}/>

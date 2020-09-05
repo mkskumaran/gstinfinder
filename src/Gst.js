@@ -87,6 +87,7 @@ class Gst  extends Component {
 	const rupees = Number(this.state.rupees);
     const gstAmount = Number((this.state.rupees * this.state.percent) / 100);
 	const netGst = gstAmount*2;	
+	const totalAmount = rupees + netGst;
 	return(
 
 	<div className="App">	  	
@@ -146,16 +147,16 @@ class Gst  extends Component {
 			<div> {'Amount'}</div>  { <div> {netGst} </div> }
           </Grid>
           <Grid item  className={classes.rates}>
-			<div> {'Tax'}</div> { <div> {gstAmount} </div> }
-          </Grid>
-          <Grid item  className={classes.rates}>
 			<div> {'CGST'}</div> { <div> {gstAmount} </div> }
-          </Grid>	
+          </Grid>
           <Grid item  className={classes.rates}>
 			<div> {'SGST'}</div> { <div> {gstAmount} </div> }
+          </Grid>	
+          <Grid item  className={classes.rates}>
+			<div> {'Total Amount'}</div> { <div> {totalAmount} </div> }
           </Grid>
 		<Grid>
-			{ <div className={classes.ratescom}> Note : {gstAmount/2} Rupess Will Go To Center (CGST) & {gstAmount/2} Rupess Will Go To State (SGST)</div> }
+			{ <div className={classes.ratescom}> Note : {gstAmount} Rupess Will Go To Center (CGST) & {gstAmount} Rupess Will Go To State (SGST)</div> }
 		</Grid>		  
         </Grid>
 		:null 

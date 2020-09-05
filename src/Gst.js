@@ -13,7 +13,7 @@ const styles = theme => ({
 		textAlign:'justify',
 	},
 	card:{
-		width:'90%',
+		width:'15%',
 		margin:'0 5% auto',
 		paddingTop:'1em',
 	},

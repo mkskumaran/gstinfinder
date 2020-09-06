@@ -86,7 +86,7 @@ class Gst  extends Component {
     const { classes } = this.props;
 	const rupees = Number(this.state.rupees);
     const gstAmount = Number((this.state.rupees * this.state.percent) / 100);
-	const netGst = gstAmount/2;	
+	const netGst = gstAmount*2;	
 	const totalAmount = rupees + netGst;
 	return(
 
